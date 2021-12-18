@@ -1,0 +1,1 @@
+export const VACCINE_DATA_URL = "http://localhost:3000/data";

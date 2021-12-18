@@ -1,0 +1,7 @@
+.dashboard_container{
+    display: block;
+    position: relative;
+    top:120px;
+    z-index: 0;
+    padding-bottom: 20px;
+}

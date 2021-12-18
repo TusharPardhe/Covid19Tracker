@@ -1,0 +1,13 @@
+.about_container{
+    position: relative;
+    top:120px;
+}
+
+.subHeading{
+    padding: 20px 0;
+    white-space: pre-line;
+}
+
+.success {
+    color: blue;
+}

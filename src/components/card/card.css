@@ -1,0 +1,8 @@
+.card_container{
+    box-shadow: 0px 4px 12px -6px rgba(12, 15, 18, 0.08), 0px 6px 24px -4px rgba(12, 15, 18, 0.08);
+    border-radius: 12px;
+}
+.outline_heading{
+    border-bottom: 1px solid rgba(12, 15, 18, 0.08);
+    font-weight: bold;
+}

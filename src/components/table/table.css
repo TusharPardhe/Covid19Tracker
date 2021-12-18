@@ -1,0 +1,29 @@
+.table_container{
+    box-shadow: 0px 4px 12px -6px rgba(12, 15, 18, 0.08), 0px 6px 24px -4px rgba(12, 15, 18, 0.08) !important;
+    border-radius: 12px !important;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    border: 1px solid rgba(12, 15, 18, 0.08);
+}
+.table_row_arrow{
+    position: relative;
+    top:3px;
+}
+.table_row_difference{
+    color: gray;
+}
+
+.css-1poimk-MuiPaper-root-MuiMenu-paper-MuiPaper-root-MuiPopover-paper{
+    border-radius: 12px !important;
+}
+.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input.css-194a1fa-MuiSelect-select-MuiInputBase-input{
+    border-radius: 12px;
+}
+.search{
+    display: flex;
+    align-items: center;
+}
+.icons{
+    cursor: pointer;
+    padding: 10px;
+}

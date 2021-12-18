@@ -1,0 +1,30 @@
+.generalcards_container{
+    display: grid;
+    text-align: center;
+    gap:10px;
+    padding-bottom: 30px;
+}
+.generalcard_cases{
+    font-size: 20px;
+    padding: 10px 0 0 0;
+    color: gray;
+}
+.generalcard_subText{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding: 6px 0 0 0;
+}
+.generalcard_change{
+    font-size: 14px;
+}
+.generalcard_arrow{
+    top: 2px;
+    position: relative;
+}
+.error{
+    color: red;
+}
+.success{
+    color: green;
+}
