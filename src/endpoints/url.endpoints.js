@@ -1,1 +1,1 @@
-export const VACCINE_DATA_URL = "https://serverreactapp22.herokuapp.com/data";
+export const VACCINE_DATA_URL = "https://reactserverforapp.herokuapp.com/data";
