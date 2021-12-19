@@ -1,5 +1,5 @@
 const { merge }  = require('webpack-merge')
-const {commonConfig} = require('./webpack.config.common')
+const commonConfig = require('./wepback.config.common')
 
 module.exports = merge(commonConfig, {
   mode: 'production',

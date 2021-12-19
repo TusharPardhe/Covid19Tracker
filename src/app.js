@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react';
+import React from 'react';
 
 import AppContext from './context/app.context';
 import Routes from './routes';
