@@ -41,7 +41,7 @@ const GraphComponent = () => {
     const { state_name, new_active, new_positive, new_cured, new_death } = state;
 
     return (
-        <div className="graph_container" style={{ margin: `${isMobile ? "0 50px" : "0 120px"}` }}>
+        <div className="graph_container" style={{ margin: `${isMobile ? "0 20px" : "0 120px"}` }}>
             <Button onClick={()=>gobackToDashBoard()} color="secondary" variant="outlined">Go Back</Button>
             <Container className="graph_inner_container">
                 <h4 className="heading">{state_name}</h4>
