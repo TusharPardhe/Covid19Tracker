@@ -1,1 +1,1 @@
-export const VACCINE_DATA_URL = "http://localhost:3000/data";
+export const VACCINE_DATA_URL = "http://3.136.106.106:3000/data";
