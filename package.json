@@ -17,7 +17,8 @@
     "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1",
-    "webpack-dev-server": "^4.6.0"
+    "webpack-dev-server": "^4.6.0",
+    "workbox-webpack-plugin": "^6.4.2"
   },
   "dependencies": {
     "@babel/preset-env": "^7.16.5",
