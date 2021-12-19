@@ -16,6 +16,15 @@
  <meta name="title" content="Covid 19 Case Tracker" />
 </head>
 <body>
+  <script>
+    {
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function () {
+          navigator.serviceWorker.register('/service-worker.js');
+        });
+      }
+    }
+  </script>
     <div id="root"></div>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 </body>
