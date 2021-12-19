@@ -13,7 +13,7 @@ self.addEventListener('activate', e => {
     caches.keys().then(cacheNames => {
       return Promise.all(
         cacheNames.map(cache => {
-          if ((cache !== cacheName) || isExpired(cache)) {
+          if ((cache !== cacheName)) {
             console.log('Service Worker: Clearing Old Cache');
             return caches.delete(cache);
           }
@@ -43,11 +43,7 @@ self.addEventListener('fetch', e => {
         // Open cahce
         caches.open(cacheName).then(cache => {
           // Add response to cache
-          cache.put(e.request, new Response(resClone, {
-            status: resClone.status,
-            statusText: resClone.statusText,
-            headers: headers
-          }));
+          cache.put(e.request, resClone);
         });
         return res;
       })
