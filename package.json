@@ -42,7 +42,6 @@
   "scripts": {
     "build": "webpack --config=webpack.config.prod.js",
     "build-dev": "webpack --config=webpack.config.dev.js",
-    "start": "webpack-dev-server --config=webpack.config.dev.js --open",
-    "start:node": "node node-server/database.js"
+    "start": "webpack-dev-server --config=webpack.config.dev.js --open"
   }
 }
