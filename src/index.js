@@ -13,12 +13,3 @@ const Index = () => {
     )
 }
 ReactDOM.render(<Index />, document.getElementById("root"));
-
-if("serviceWorker" in navigator){
-    window.addEventListener("load",()=>{
-        navigator.serviceWorker.register("./sw-cached-pages.js")
-        .then((res)=>{
-            console.log("sw registered")
-        }).catch((err)=> console.log(`Service Worker Err:${err}`))
-    })
-}

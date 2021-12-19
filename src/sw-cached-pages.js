@@ -1,4 +1,4 @@
-const cacheName = 'v2';
+const cacheName = 'v1';
 
 // Call Install Event
 self.addEventListener('install', e => {
@@ -23,13 +23,6 @@ self.addEventListener('activate', e => {
   );
 });
 
-const isExpired = (response) => {
-  if (!response) return false;
-  var fetched = response.headers.get('sw-fetched-on');
-  if (fetched && (parseFloat(fetched) + (1000 * 60 * 2)) < new Date().getTime()) return true;
-  return false;
-};
-
 // Call Fetch Event
 self.addEventListener('fetch', e => {
   console.log('Service Worker: Fetching');
@@ -38,8 +31,6 @@ self.addEventListener('fetch', e => {
       .then(res => {
         // Make copy/clone of response
         const resClone = res.clone();
-        const headers = new Headers(resClone.headers);
-        headers.append('sw-fetched-on', new Date().getTime());
         // Open cahce
         caches.open(cacheName).then(cache => {
           // Add response to cache
