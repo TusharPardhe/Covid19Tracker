@@ -1,6 +1,7 @@
 import React, { Suspense } from "react";
 import { Route, BrowserRouter, Navigate, Routes as Switch } from "react-router-dom";
 import NavBar from './components/navbar/navbar';
+import Footer from './components/footer/footer';
 import GraphComponent from "./components/graph/graph.component";
 import { ROUTES } from "./constants/app.constants";
 
@@ -19,6 +20,7 @@ const Routes = () => {
                     <Route exact path={ROUTES.ABOUT} element={<About />} />
                     <Route path="/*" element={null} />
                 </Switch>
+                <Footer />
             </BrowserRouter>
         </Suspense>
     );
