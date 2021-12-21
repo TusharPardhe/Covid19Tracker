@@ -34,7 +34,7 @@ const TableComponent = () => {
     const currentPage = page * rowsPerPage;
 
     useEffect(() => {
-       if(state?.statesData) setStateWiseData(state.statesData.slice(1,-1));
+        if (state?.statesData) setStateWiseData(state.statesData.filter(({ state_name }) => state_name.toLowerCase() !== "total"));
     }, [state.statesData]);
 
     const filterStateDataOnSearch = () =>{
@@ -46,7 +46,7 @@ const TableComponent = () => {
     const resetData = () =>{
         setSearchValue("");
         setPage(0);
-        setStateWiseData(state.statesData.slice(1,-1));
+        setStateWiseData(state.statesData.filter(({ state_name }) => state_name.toLowerCase() !== "total"));
     }
 
     const handleChangePage = (event, newPage) => {
